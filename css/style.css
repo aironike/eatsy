@@ -14,6 +14,7 @@ body {
 
 .main-navigation {
 	width: 100%;
+	line-height: 50px;
 	position: fixed;
 	bottom: 0;
 	padding: 0;
@@ -30,13 +31,13 @@ body {
 	background: blue;
 }
 
-/*.ng-enter {*/
-	/*animation: pageLoad .5s ease-in-out;*/
-/*}*/
+.ng-enter {
+	animation: pageLoad .5s ease-in-out;
+}
 
-/*.ng-leave {*/
-	/*animation: pageClose .5s ease-in-out;*/
-/*}*/
+.ng-leave {
+	animation: pageClose .5s ease-in-out;
+}
 
 .nearest {
 	background: violet;
@@ -46,13 +47,13 @@ body {
 	background: yellow;
 }
 
-/* Animation */
+ Animation
 
-/*@keyframes pageLoad {*/
-	/*from: {	transform: translateX(100%); }*/
-	/*to: { transform: translateX(0); }*/
-/*}*/
+@keyframes pageLoad {
+	from: {	transform: translateX(100%); }
+	to: { transform: translateX(0); }
+}
 
-/*@keyframes pageClose {*/
-	/*to: { transform: translateX(-100%); }*/
-/*}*/
+@keyframes pageClose {
+	to: { transform: translateX(-100%); }
+}
