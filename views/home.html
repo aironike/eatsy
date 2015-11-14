@@ -6,6 +6,12 @@
 	</div>
 </div>
 
+<ul class="list-unstyled friends-header" ng-controller="friendsListController">
+	<li class="friend-item" ng-repeat="item in friendList">
+		<img ng-src="{{item.profile}}" />
+	</li>
+</ul>
+
 <ul class="list-unstyled feed" ng-controller="feedController">
 	<li class="feed-item" ng-repeat="item in feedItems">
 		<img ng-src="{{item.logo}}" />

@@ -245,6 +245,7 @@ body {
 .home .header p {
 	color: #FFF;
 	opacity: .7;
+	margin-top:10px;
 }
 
 /* Feed */
@@ -292,6 +293,20 @@ body {
 	-webkit-transform: translateY(-50%);
 	font-size: 2rem;
 	margin: 0 20px;
+}
+
+/* Friends */
+
+.friends-header {
+	margin-top: 5px;
+	text-align: center;
+}
+.friends-header li {
+	display: inline-block;
+	margin: 0 5px;
+}
+.friends-header img {
+	max-width: 40px;
 }
 
 /* Nearest */ 
