@@ -1,17 +1,24 @@
 <!DOCTYPE html>
-<html ng-app="eatsyApp">
+<html>
 <head>
 	<title>Eatsy</title>
-	<script src="bower_components/angular/angular.js"></script>
-	  <script src="bower_components/angular-route/angular-route.js"></script>
-	  <script src="js/app.js"></script>
-	  <script src="js/controllers.js"></script>
+	<link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
+<body ng-app="eatsyApp">
 
-	<div ng-view></div>
-	<a href="#/">Home</a><a href="#search">Search</a>
-
+	<div class="main {{ pageClass }}" ng-view></div>
 	
+	<ul class="main-navigation">
+		<li><a href="#/">Home</a></li> 
+		<li><a href="#search">Search</a></li>
+		<li><a href="#nearest">Nearest</a></li>
+		<li><a href="#favourite">Favourites</a></li>
+	</ul>
+
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-route/angular-route.js"></script>
+	<script src="bower_components/angular-animate/angular-animate.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/controllers.js"></script>
 </body>
 </html>
