@@ -56,9 +56,9 @@ body {
   transform: translateY(50%);
 }
 
-/*.main-navigation .icon:focus{*/
-/*background: red;*/
-/*}*/
+.main-navigation .icon:focus img{
+  opacity: 1;
+}
 
 .btn {
   border-radius: 0;
@@ -70,6 +70,11 @@ body {
 .btn-default {
   color: white;
   background: #ea4848;
+}
+
+.btn-default:hover, .btn-default:focus {
+  color:white;
+  background: #cb3e3e;
 }
 
 .btn-default img {
