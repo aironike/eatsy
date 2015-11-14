@@ -51,14 +51,15 @@ body {
   top: 50%;
   transform: translateY(50%);
   -moz-transform: translateY(50%);
-  -webkit-transform: translteY(50%);
+  -webkit-transform: translateY(50%);
   -o-transform: translateY(50%);
   -ms-transform: translateY(50%);
+  transition: opacity 0.3s ease-in-out;
   -webkit-transition: opacity 0.3s ease-in-out;
   -moz-transition: opacity 0.3s ease-in-out;
   -ms-transition: opacity 0.3s ease-in-out;
   -o-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
+  
 }
 
 .main-navigation .icon:focus img{
