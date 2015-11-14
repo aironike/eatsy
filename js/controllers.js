@@ -25,14 +25,40 @@ eatsyApp.controller('restaurantController', function($scope) {
 
 eatsyApp.controller('feedController', function ($scope) {
     $scope.feedItems = [
-        {'id' : '1', 'name' : 'Restaurant Noa', 'logo' : 'img/icons/feed_icon.png', 'dst' : '300m',
+        {'id' : '1', 'name' : 'Restaurant Noa', 'logo' : 'img/restoranide-ikoonid/feed_icon.png', 'dst' : '300m',
         'desc' : 'Neque porro quisquam est qui dolorem ipsum quia', 
         'friends' : 'Bess, Karie, Elvira and 3 other friends have rated this place.'},
-        {'id' : '2', 'name' : 'Cafe Lyon', 'logo' : 'img/icons/feed_icon.png', 'dst' : '300m',
+        {'id' : '2', 'name' : 'Cafe Lyon', 'logo' : 'img/restoranide-ikoonid/CafeLyon.png', 'dst' : '300m',
         'desc' : 'Neque porro quisquam est qui dolorem ipsum quia', 
         'friends' : 'Bess, Karie, Elvira and 3 other friends have rated this place.'},
-        {'id' : '3', 'name' : 'Cafe Lyon', 'logo' : 'img/icons/feed_icon.png', 'dst' : '300m',
+        {'id' : '3', 'name' : 'Fellin', 'logo' : 'img/restoranide-ikoonid/Fellin.png', 'dst' : '300m',
+        'desc' : 'Neque porro quisquam est qui dolorem ipsum quia', 
+        'friends' : 'Bess, Karie, Elvira and 3 other friends have rated this place.'},
+        {'id' : '4', 'name' : 'Truffe', 'logo' : 'img/restoranide-ikoonid/Truffle.png', 'dst' : '300m',
+        'desc' : 'Neque porro quisquam est qui dolorem ipsum quia', 
+        'friends' : 'Bess, Karie, Elvira and 3 other friends have rated this place.'},
+        {'id' : '5', 'name' : 'McDonalds', 'logo' : 'img/restoranide-ikoonid/McDonalds.png', 'dst' : '300m',
+        'desc' : 'Neque porro quisquam est qui dolorem ipsum quia', 
+        'friends' : 'Bess, Karie, Elvira and 3 other friends have rated this place.'},
+        {'id' : '6', 'name' : 'Restaurant Piparmünt', 'logo' : 'img/restoranide-ikoonid/feed_icon2.png', 'dst' : '300m',
+        'desc' : 'Neque porro quisquam est qui dolorem ipsum quia', 
+        'friends' : 'Bess, Karie, Elvira and 3 other friends have rated this place.'},
+        {'id' : '4', 'name' : 'Truffe', 'logo' : 'img/restoranide-ikoonid/Truffle.png', 'dst' : '300m',
+        'desc' : 'Neque porro quisquam est qui dolorem ipsum quia', 
+        'friends' : 'Bess, Karie, Elvira and 3 other friends have rated this place.'},
+        {'id' : '5', 'name' : 'McDonalds', 'logo' : 'img/restoranide-ikoonid/McDonalds.png', 'dst' : '300m',
+        'desc' : 'Neque porro quisquam est qui dolorem ipsum quia', 
+        'friends' : 'Bess, Karie, Elvira and 3 other friends have rated this place.'},
+        {'id' : '6', 'name' : 'Restaurant Piparmynt', 'logo' : 'img/restoranide-ikoonid/feed_icon2.png', 'dst' : '300m',
         'desc' : 'Neque porro quisquam est qui dolorem ipsum quia', 
         'friends' : 'Bess, Karie, Elvira and 3 other friends have rated this place.'}
     ];
+
+    $scope.feedItems.splice(1, 0, data);
 });
+
+var data = {'id' : '6', 'name' : 'Restaurant Piparmynt', 'logo' : 'img/restoranide-ikoonid/feed_icon2.png', 'dst' : '300m',
+        'desc' : 'Neque porro quisquam est qui dolorem ipsum quia', 
+        'friends' : 'Bess, Karie, Elvira and 3 other friends have rated this place.'};
+
+

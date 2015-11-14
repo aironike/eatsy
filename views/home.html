@@ -1,3 +1,4 @@
+<div class="main-wrapper">
 <div class="header">
 	<div class="header-info">
 		<h3>Pärnu</h3>
@@ -22,7 +23,7 @@
 </ul>
 
 <ul class="list-unstyled suggestions" ng-controller="otherController">
-	<li class="feed-item" ng-repeat="item in feedItems">
+	<li class="feed-item" ng-repeat="item in suggestions">
 		<img ng-src="{{item.logo}}" />
 		<div class="info">
 			<h3>{{item.name}}</h3>
@@ -36,3 +37,4 @@
 		
 	</li>
 </ul>
+</div>
