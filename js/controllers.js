@@ -22,6 +22,12 @@ eatsyApp.controller('restaurantController', function($scope) {
     $scope.message = 'restaurantPage';
     $scope.pageClass = "restaurant";
 });
+/* TEMP */
+eatsyApp.controller('restaurantInfoController', function($scope) {
+    $scope.message = 'restaurantInfoPage';
+    $scope.pageClass = "restaurantinfo";
+});
+/* END TEMP */
 
 eatsyApp.controller('otherController', function($scope) {
     $scope.pageClass = "otherSuggestions";
