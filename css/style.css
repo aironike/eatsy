@@ -144,33 +144,52 @@ body {
 	transform: translateX(-100%);
 }
 
-/* Nearest */
+/* Home feed */
 
-.nearest-list li {
-	border-bottom: 1px solid #e8e8e8;
-	position: relative;
+.home {
+	background: #f6f6f6;
 }
 
-.nearest-list img {
+.home .header {
+	height: 65px;
+	background: #fff;
+	margin: 0;
+}
+
+.home .header h3, .home .header p {
+	margin: 0;
+	text-align: center;
+	padding: 5px 0 0 0;
+}
+
+/* Feed */
+
+.feed li {
+	border-bottom: 1px solid #e8e8e8;
+	position: relative;
+	background: #FFF;
+}
+
+.feed .feed-item img {
 	max-width: 70px;
 	margin: 10px 20px;
 	display: inline-block;
 }
-.nearest-list h3 {
+.feed .feed-item h3 {
 	padding: 0;
 	margin: 10px 0 0 0;
 	color: #ea4848;
 	font-weight: 300;
 }
-.nearest-list .info {
+.feed .feed-item .info {
 	display: inline-block;
 }
 
-.nearest-list p {
+.feed .feed-item p {
 	font-size: 1.3rem;
 }
 
-.nearest-list span {
+.feed .feed-item span {
 	position: absolute;
 	right: 0;
 	top: 50%;
