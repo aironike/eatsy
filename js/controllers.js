@@ -27,16 +27,20 @@ eatsyApp.controller('feedController', function ($scope) {
     $scope.feedItems = [
         {'id' : '1', 'name' : 'Restaurant Noa', 'logo' : 'img/restoranide-ikoonid/feed_icon.png', 'dst' : '300m',
         'desc' : 'Neque porro quisquam est qui dolorem ipsum quia', 
-        'friends' : 'Bess, Karie, Elvira and 3 other friends have rated this place.'},
+        'friends' : 'Bess, Karie, Elvira and 3 other friends have rated this place.', 
+        'rating':'img/rating/4stars.png'},
         {'id' : '2', 'name' : 'Cafe Lyon', 'logo' : 'img/restoranide-ikoonid/CafeLyon.png', 'dst' : '300m',
         'desc' : 'Neque porro quisquam est qui dolorem ipsum quia', 
-        'friends' : 'Bess, Karie, Elvira and 3 other friends have rated this place.'},
+        'friends' : 'Bess, Karie, Elvira and 3 other friends have rated this place.', 
+        'rating':'img/rating/5stars.png'},
         {'id' : '3', 'name' : 'Fellin', 'logo' : 'img/restoranide-ikoonid/Fellin.png', 'dst' : '300m',
         'desc' : 'Neque porro quisquam est qui dolorem ipsum quia', 
-        'friends' : 'Bess, Karie, Elvira and 3 other friends have rated this place.'},
+        'friends' : 'Bess, Karie, Elvira and 3 other friends have rated this place.', 
+        'rating':'img/rating/3stars.png'},
         {'id' : '4', 'name' : 'Truffe', 'logo' : 'img/restoranide-ikoonid/Truffle.png', 'dst' : '300m',
         'desc' : 'Neque porro quisquam est qui dolorem ipsum quia', 
-        'friends' : 'Bess, Karie, Elvira and 3 other friends have rated this place.'}
+        'friends' : 'Bess, Karie, Elvira and 3 other friends have rated this place.', 
+        'rating':'img/rating/3stars.png'}
     ];
 
     // $scope.feedItems.splice(1, 0, data); <- Injection

@@ -303,7 +303,7 @@ body {
 	height: 105px;
 }
 
-.feed .feed-item img {
+.feed .feed-item .itemLogo {
 	max-width: 70px;
 	margin: 10px 20px;
 	display: inline-block;
@@ -331,10 +331,15 @@ body {
 .feed .feed-item span {
 	position: absolute;
 	right: 0;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
 	font-size: 2rem;
 	margin: 0 20px;
+}
+
+.feed .feed-item .rating {
+	top: 7px;
+}
+.feed .feed-item .distance {
+	top: 35px;
 }
 
 /* Friends */
