@@ -17,3 +17,8 @@ eatsyApp.controller('favouriteController', function($scope) {
     $scope.message = 'FavouritesPage';
     $scope.pageClass = "fav";
 });
+
+eatsyApp.controller('restaurantController', function($scope) {
+    $scope.message = 'restaurantPage';
+    $scope.pageClass = "restaurant";
+});

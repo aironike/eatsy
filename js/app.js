@@ -17,5 +17,9 @@ eatsyApp.config(function($routeProvider) {
             .when('/favourite', {
                 templateUrl : 'views/favourite.html',
                 controller  : 'favouriteController'
+            })
+            .when('/restaurant', {
+                templateUrl : 'views/restaurant.html',
+                controller  : 'restaurantController'
             }).otherwise({redirectTo: '/'});
     });
