@@ -104,6 +104,22 @@ body {
   font-size: 12px;
 }
 
+.ng-scope > .search{
+  background: url('../img/taustad/search.jpg') no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.ng-scope > .search h1{
+  font-weight: 300;
+}
+
+.ng-scope > .search .categories{
+  font-size: 18px;
+  margin: auto
+  top: 50%
+}
+
 .container .content-navigation {
   text-transform: uppercase;
 }
