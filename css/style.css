@@ -46,7 +46,7 @@ body {
 	background: url("../img/icons/around_me.png") no-repeat center center;
 }
 
-.main-navigation .favourites{
+.main-navigation .favourite{
 	background: url("../img/icons/favourite.png") no-repeat center center;
 }
 
@@ -70,7 +70,7 @@ body {
 	animation: pageClose .5s ease-in-out;
 }
 
- Animation
+/*Animation*/
 
 @keyframes pageLoad {
 	from: {	transform: translateX(-100px); }
