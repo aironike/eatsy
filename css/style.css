@@ -46,7 +46,7 @@ body {
 	background: url("../img/icons/around_me.png") no-repeat center center;
 }
 
-.main-navigation .favourites{
+.main-navigation .favourite{
 	background: url("../img/icons/favourite.png") no-repeat center center;
 }
 
@@ -69,8 +69,15 @@ body {
 .ng-enter {
 	-webkit-transform: translateX(-100%);
 }
+
 .ng-enter.ng-enter-active {
 	-webkit-transform: translateX(0);
+
+/*Animation*/
+
+@keyframes pageLoad {
+	from: {	transform: translateX(-100px); }
+	to: { transform: translateX(120px); }
 }
 .ng-leave {
 	-webkit-transform: translateX(0);
