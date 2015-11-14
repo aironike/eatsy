@@ -16,6 +16,7 @@ body {
 	width: 100%;
 	line-height: 50px;
 	position: fixed;
+	text-align: center;
 	bottom: 0;
 	padding: 0;
 	margin: 0;
@@ -24,11 +25,15 @@ body {
 
 
 .home {
-	background: red;
 }
 
 .search {
-	background: blue;
+}
+
+.nearest {
+}
+
+.fav {
 }
 
 .ng-enter {
@@ -39,19 +44,11 @@ body {
 	animation: pageClose .5s ease-in-out;
 }
 
-.nearest {
-	background: violet;
-}
-
-.fav {
-	background: yellow;
-}
-
  Animation
 
 @keyframes pageLoad {
-	from: {	transform: translateX(100%); }
-	to: { transform: translateX(0); }
+	from: {	transform: translateX(-100px); }
+	to: { transform: translateX(120px); }
 }
 
 @keyframes pageClose {
