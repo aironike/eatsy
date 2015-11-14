@@ -34,6 +34,10 @@ body {
 	width: 50px;
 }
 
+/*.main-navigation .icon:focus{*/
+ /*background: red;*/
+/*}*/
+
 .main-navigation .user-profile{
  background: url("../img/icons/user.png") no-repeat center center;
 }
@@ -50,38 +54,78 @@ body {
 	background: url("../img/icons/favourite.png") no-repeat center center;
 }
 
+.jumbotron{
+	background: red;
+	height: 200px;
+	width: 100%;
+}
+
 .home {
+	background: yellow;
+}
 }
 
 .search {
+	background: blue;
 }
 
 .nearest {
+	background: red;
 }
 
 .fav {
+	background: violet;
 }
 
 .ng-animate {
+	-webkit-transition: .4s ease-in all;
+	-moz-transition: .4s ease-in all;
+	-ms-transition: .4s ease-in all;
+	-o-transition: .4s ease-in all;
 	transition: .4s ease-in all;
 }
 
 .ng-enter {
+	-moz-transform: translateX(-100%);
 	-webkit-transform: translateX(-100%);
+	-o-transform: translateX(-100%);
+	-ms-transform: translateX(-100%);
+	transform: translateX(-100%);
 }
 
 .ng-enter.ng-enter-active {
+	-moz-transform: translateX(0);
 	-webkit-transform: translateX(0);
+	-o-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
 
 /*Animation*/
 
 @keyframes pageLoad {
-	from: {	transform: translateX(-100px); }
-	to: { transform: translateX(120px); }
+	from: {
+	-moz-transform: translateX(-100%);
+	-webkit-transform: translateX(-100%);
+	-o-transform: translateX(-100%);
+	-ms-transform: translateX(-100%);
+	transform: translateX(-100%);
+}
+	to: {
+		-moz-transform: translateX(120%);
+		-webkit-transform: translateX(120%);
+		-o-transform: translateX(120%);
+		-ms-transform: translateX(120%);
+		transform: translateX(120%);
+	}
 }
 .ng-leave {
 	-webkit-transform: translateX(0);
+	transform: translateX(0);
 }
 .ng-leave.ng-leave-active {
+	-moz-transform: translateX(-100%);
 	-webkit-transform: translateX(-100%);
+	-o-transform: translateX(-100%);
+	-ms-transform: translateX(-100%);
+	transform: translateX(-100%);
 }
