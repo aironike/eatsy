@@ -149,22 +149,6 @@ body {
   margin-bottom: 10px;
 }
 
-.home {
-  background: yellow;
-}
-
-.search {
-  background: blue;
-}
-
-.nearest {
-  background: red;
-}
-
-.fav {
-  background: violet;
-}
-
 .ng-animate {
   -webkit-transition: .3s ease-in all;
   -moz-transition: .3s ease-in all;
@@ -209,8 +193,10 @@ body {
 }
 
 .home .header {
-	height: 65px;
-	background: #fff;
+	height: 200px;
+	background: url('../img/taustad/map.png') no-repeat;
+	background-size: cover;
+	opacity: .6;
 	margin: 0;
 }
 
@@ -218,6 +204,13 @@ body {
 	margin: 0;
 	text-align: center;
 	padding: 5px 0 0 0;
+}
+
+.home .header h3 {
+	color: #ea4848;
+}
+.home .header p {
+	color: #FFF;
 }
 
 /* Feed */
