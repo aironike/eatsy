@@ -14,15 +14,41 @@ body {
 
 .main-navigation {
 	width: 100%;
-	line-height: 50px;
+	line-height: 80px;
 	position: fixed;
 	text-align: center;
 	bottom: 0;
 	padding: 0;
 	margin: 0;
 	background: #ea4848;
+	height: 70px;
 }
 
+.main-navigation .icon{
+	background: yellow;
+	background-repeat: no-repeat center center;
+	background-position: center;
+	margin: 10px auto;
+	display: block;
+	height: 50px;
+	width: 50px;
+}
+
+.main-navigation .user-profile{
+ background: url("../img/icons/user.png") no-repeat center center;
+}
+
+.main-navigation .search{
+	background: url("../img/icons/search.png") no-repeat center center;
+}
+
+.main-navigation .nearest{
+	background: url("../img/icons/around_me.png") no-repeat center center;
+}
+
+.main-navigation .favourites{
+	background: url("../img/icons/favourite.png") no-repeat center center;
+}
 
 .home {
 }
