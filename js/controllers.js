@@ -44,7 +44,7 @@ eatsyApp.controller('feedController', function ($scope) {
         {'id' : '4', 'name' : 'Truffe', 'logo' : 'img/restoranide-ikoonid/Truffle.png', 'dst' : '300m',
         'desc' : 'Neque porro quisquam est qui dolorem ipsum quia', 
         'friends' : 'Bess, Karie, Elvira and 3 other friends have rated this place.', 
-        'rating':'img/rating/3stars_punane.png'}
+        'rating':'img/rating/3stars.png'}
     ];
 
     // $scope.feedItems.splice(1, 0, data); <- Injection
