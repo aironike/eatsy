@@ -145,6 +145,15 @@ body {
   box-shadow: inset 0px -15px 20px -5px rgba(14, 13, 13, 0.55);
 }
 
+.jumbotron h3 {
+  font-weight: 300;
+}
+
+.jumbotron-navigation img{
+  width: 30px;
+  height: 30px;
+}
+
 .jumbotron .logo-wrapper {
   width: 220px;
   max-height: 220px;
