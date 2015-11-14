@@ -54,12 +54,16 @@ body {
   -webkit-transform: translteY(50%);
   -o-transform: translateY(50%);
   -ms-transform: translateY(50%);
-  
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
-/*.main-navigation .icon:focus{*/
-/*background: red;*/
-/*}*/
+.main-navigation .icon:focus img{
+  opacity: 1;
+}
 
 .btn {
   border-radius: 0;
@@ -71,6 +75,11 @@ body {
 .btn-default {
   color: white;
   background: #ea4848;
+}
+
+.btn-default:hover, .btn-default:focus {
+  color:white;
+  background: #cb3e3e;
 }
 
 .btn-default img {
@@ -103,6 +112,22 @@ body {
 
 .jumbotron .slogan {
   font-size: 12px;
+}
+
+.ng-scope > .search{
+  background: url('../img/taustad/search.jpg') no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.ng-scope > .search h1{
+  font-weight: 300;
+}
+
+.ng-scope > .search .categories{
+  font-size: 18px;
+  margin: auto
+  top: 50%
 }
 
 .container .content-navigation {
