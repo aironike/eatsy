@@ -13,17 +13,13 @@
 
   <![endif]-->
   <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/js/fake_notification.js"></script>
   <link rel="stylesheet" href="css/style.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <script>
-  $(document).ready(function() {
-    $( ".push-notification" ).slideDown( "slow", function() {
-      $(this).delay(5000).slideUp( "slow", function() {
-      });
-    });
-  });
+
 </script>
 <body ng-app="eatsyApp">
 
