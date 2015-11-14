@@ -49,11 +49,12 @@ body {
   max-width: 30px;
   position: relative;
   top: 50%;
+  transform: translateY(50%);
   -moz-transform: translateY(50%);
   -webkit-transform: translteY(50%);
   -o-transform: translateY(50%);
   -ms-transform: translateY(50%);
-  transform: translateY(50%);
+  
 }
 
 /*.main-navigation .icon:focus{*/
@@ -145,11 +146,11 @@ body {
 }
 
 .ng-animate {
-  -webkit-transition: .3s ease-in all;
-  -moz-transition: .3s ease-in all;
-  -ms-transition: .3s ease-in all;
-  -o-transition: .3s ease-in all;
-  transition: .3s ease-in all;
+  -webkit-transition: .2s linear all;
+  -moz-transition: .2s linear all;
+  -ms-transition: .2s linear all;
+  -o-transition: .2s linear all;
+  transition: .2s linear all;
 }
 
 .ng-enter {
@@ -174,11 +175,11 @@ body {
 }
 
 .ng-leave.ng-leave-active {
-  -moz-transform: translateX(-100%);
-  -webkit-transform: translateX(-100%);
-  -o-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  transform: translateX(-100%);
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
 }
 
 /* Home feed */
@@ -188,24 +189,32 @@ body {
 }
 
 .home .header {
-	height: 200px;
+	height: 150px;
 	background: url('../img/taustad/map.png') no-repeat;
 	background-size: cover;
-	opacity: .6;
 	margin: 0;
+}
+
+.home .header-info {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
 }
 
 .home .header h3, .home .header p {
 	margin: 0;
+	font-weight: 400;
 	text-align: center;
 	padding: 5px 0 0 0;
 }
 
 .home .header h3 {
-	color: #ea4848;
+	color: #fff;
+	font-size: 3rem;
 }
 .home .header p {
 	color: #FFF;
+	opacity: .7;
 }
 
 /* Feed */
@@ -231,8 +240,14 @@ body {
 	display: inline-block;
 }
 
+.feed .feed-item .info .friends {
+	float: left;
+	color: #bcbcbc;
+}
+
 .feed .feed-item p {
 	font-size: 1.3rem;
+	margin: 5px 0 0 0;
 }
 
 .feed .feed-item span {

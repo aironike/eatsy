@@ -1,18 +1,38 @@
 <div class="header">
 	<div class="header-info">
 		<h3>Pärnu</h3>
-		<p>12 friends have dined here</p>	
+		<p>12 friends have been dining here at 6 different places</p>	
 	</div>
 </div>
 
-<ul class="list-unstyled feed">
-	<li class="feed-item">
-		<img src="img/icons/feed_icon.png" />
+<ul class="list-unstyled feed" ng-controller="feedController">
+	<li class="feed-item" ng-repeat="item in feedItems">
+		<img ng-src="{{item.logo}}" />
 		<div class="info">
-			<h3>Restoran Noa</h3>
-			<p>Descriptive text</p>
+			<h3>{{item.name}}</h3>
+			<p>{{item.desc}}</p>
+			<p class="friends">{{item.friends}}</p>
 		</div>
-		<span>122km</span>
+		<div class="extra-info">
+			<span class="distance">{{item.dst}}</span>
+			<span class="rating">{{item.rating}}</span>
+		</div>
+		
+	</li>
+</ul>
+
+<ul class="list-unstyled suggestions" ng-controller="otherController">
+	<li class="feed-item" ng-repeat="item in feedItems">
+		<img ng-src="{{item.logo}}" />
+		<div class="info">
+			<h3>{{item.name}}</h3>
+			<p>{{item.desc}}</p>
+			<p class="friends">{{item.friends}}</p>
+		</div>
+		<div class="extra-info">
+			<span class="distance">{{item.dst}}</span>
+			<span class="rating">{{item.rating}}</span>
+		</div>
 		
 	</li>
 </ul>
