@@ -1,9 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400);
+
 html, body {
 	height: 100%;
 } 
 
 body {
 	margin: 0;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
 }
 
 .no-margin{
@@ -36,45 +41,26 @@ body {
 
 .main-navigation {
 	width: 100%;
-	line-height: 80px;
 	position: fixed;
 	text-align: center;
 	bottom: 0;
 	padding: 0;
 	margin: 0;
 	background: #ea4848;
-	height: 70px;
+	height: 60px;
 }
 
-.main-navigation .icon{
-	background: yellow;
-	background-repeat: no-repeat center center;
-	background-position: center;
-	margin: 10px auto;
-	display: block;
-	height: 50px;
-	width: 50px;
+.main-navigation img {
+	opacity: .5;
+	max-width: 30px;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(50%);
 }
 
 /*.main-navigation .icon:focus{*/
  /*background: red;*/
 /*}*/
-
-.main-navigation .user-profile{
- background: url("../img/icons/user.png") no-repeat center center;
-}
-
-.main-navigation .search{
-	background: url("../img/icons/search.png") no-repeat center center;
-}
-
-.main-navigation .nearest{
-	background: url("../img/icons/around_me.png") no-repeat center center;
-}
-
-.main-navigation .favourite{
-	background: url("../img/icons/favourite.png") no-repeat center center;
-}
 
 .btn{
 	border-radius:0;
@@ -175,12 +161,13 @@ body {
 	background: violet;
 }
 
+
 .ng-animate {
-	-webkit-transition: .4s ease-in all;
-	-moz-transition: .4s ease-in all;
-	-ms-transition: .4s ease-in all;
-	-o-transition: .4s ease-in all;
-	transition: .4s ease-in all;
+	-webkit-transition: .3s ease-in all;
+	-moz-transition: .3s ease-in all;
+	-ms-transition: .3s ease-in all;
+	-o-transition: .3s ease-in all;
+	transition: .3s ease-in all;
 }
 
 .ng-enter {
@@ -197,25 +184,9 @@ body {
 	-o-transform: translateX(0);
 	-ms-transform: translateX(0);
 	transform: translateX(0);
-
-/*Animation*/
-
-@keyframes pageLoad {
-	from: {
-	-moz-transform: translateX(-100%);
-	-webkit-transform: translateX(-100%);
-	-o-transform: translateX(-100%);
-	-ms-transform: translateX(-100%);
-	transform: translateX(-100%);
 }
-	to: {
-		-moz-transform: translateX(120%);
-		-webkit-transform: translateX(120%);
-		-o-transform: translateX(120%);
-		-ms-transform: translateX(120%);
-		transform: translateX(120%);
-	}
-}
+
+
 .ng-leave {
 	-webkit-transform: translateX(0);
 	transform: translateX(0);
@@ -226,4 +197,39 @@ body {
 	-o-transform: translateX(-100%);
 	-ms-transform: translateX(-100%);
 	transform: translateX(-100%);
+}
+
+/* Nearest */
+
+.nearest-list li {
+	border-bottom: 1px solid #e8e8e8;
+	position: relative;
+}
+
+.nearest-list img {
+	max-width: 70px;
+	margin: 10px 20px;
+	display: inline-block;
+}
+.nearest-list h3 {
+	padding: 0;
+	margin: 10px 0 0 0;
+	color: #ea4848;
+	font-weight: 300;
+}
+.nearest-list .info {
+	display: inline-block;
+}
+
+.nearest-list p {
+	font-size: 1.3rem;
+}
+
+.nearest-list span {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	font-size: 2rem;
+	margin: 0 20px;
 }
