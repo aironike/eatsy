@@ -55,7 +55,11 @@ body {
   max-width: 30px;
   position: relative;
   top: 50%;
-  -webkit-transform: translateY(50%);
+  -moz-transform: translateY(50%);
+  -webkit-transform: translteY(50%);
+  -o-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
 }
 
 /*.main-navigation .icon:focus{*/
