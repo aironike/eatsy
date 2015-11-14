@@ -66,6 +66,10 @@ body {
   padding: 0 !important;
 }
 
+.no-padding-bottom {
+  padding-bottom: 0 !important;
+}
+
 .border-bottom {
   border-bottom: solid 1px #e8e8e8;
 }
@@ -152,6 +156,14 @@ body {
 .jumbotron-navigation img{
   width: 30px;
   height: 30px;
+}
+
+.jumbotron-navigation li {
+  height: 50px;
+}
+
+.jumbotron-navigation .active{
+  background: url('../img/icons/arrow.png') no-repeat bottom center;
 }
 
 .jumbotron .logo-wrapper {
