@@ -14,7 +14,6 @@ body {
 
 .main-navigation {
 	width: 100%;
-	list-style: none;
 	position: fixed;
 	bottom: 0;
 	padding: 0;
@@ -22,10 +21,6 @@ body {
 	background: #ea4848;
 }
 
-.main-navigation li {
-	display: inline-block;
-	padding: 10px 15px;
-}
 
 .home {
 	background: red;
@@ -35,13 +30,13 @@ body {
 	background: blue;
 }
 
-.ng-enter {
-	animation: pageLoad .5s ease-in-out;
-}
+/*.ng-enter {*/
+	/*animation: pageLoad .5s ease-in-out;*/
+/*}*/
 
-.ng-leave {
-	animation: pageClose .5s ease-in-out;
-}
+/*.ng-leave {*/
+	/*animation: pageClose .5s ease-in-out;*/
+/*}*/
 
 .nearest {
 	background: violet;
@@ -53,11 +48,11 @@ body {
 
 /* Animation */
 
-@keyframes pageLoad {
-	from: {	transform: translateX(100%); }
-	to: { transform: translateX(0); }
-}
+/*@keyframes pageLoad {*/
+	/*from: {	transform: translateX(100%); }*/
+	/*to: { transform: translateX(0); }*/
+/*}*/
 
-@keyframes pageClose {
-	to: { transform: translateX(-100%); }
-}
+/*@keyframes pageClose {*/
+	/*to: { transform: translateX(-100%); }*/
+/*}*/
