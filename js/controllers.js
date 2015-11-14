@@ -56,27 +56,50 @@ eatsyApp.controller('feedController', function ($scope) {
     // $scope.feedItems.splice(1, 0, data); <- Injection
 });
 
-eatsyApp.controller('foodController', function ($scope) {
+eatsyApp.controller('foodControllerCourses', function ($scope) {
   $scope.feedItems = [
     {
-      'id': '1', 'name': 'Restaurant Noa', 'logo': 'img/foods/feed_icon.png', 'price': '11.99',
-      'desc': 'Praesent convallis convallis blandit. Nullam dapibus vel erat eu consequat. Suspendisse quis quam a elit ultricies luctus. ',
-      'rating': 'img/rating/4stars.png'
+      'id': '1', 'name': 'Pizza', 'image': 'img/menyy_pildid/pitza.jpg', 'price': '11.99',
+      'desc': 'Praesent convallis convallis blandit. Nullam dapibus vel erat eu consequat. Suspendisse quis quam a elit ultricies luctus. '
     },
     {
-      'id': '2', 'name': 'Cafe Lyon', 'logo': 'img/foods/CafeLyon.png', 'price': '15.39',
-      'desc': 'Curabitur volutpat, ex sit amet rhoncus accumsan, justo arcu facilisis enim, at molestie ligula lorem eu lectus.',
-      'rating': 'img/rating/5stars.png'
+      'id': '2', 'name': 'Cafe Lyon', 'image': 'img/menyy_pildid/pardimaks.jpg', 'price': '15.39',
+      'desc': 'Curabitur volutpat, ex sit amet rhoncus accumsan, justo arcu facilisis enim, at molestie ligula lorem eu lectus.'
     },
     {
-      'id': '3', 'name': 'Fellin', 'logo': 'img/foods/Fellin.png', 'price': '9.45',
-      'desc': 'Maecenas libero ex, tristique a gravida eu, interdum eu elit. Nunc lacinia purus vulputate nibh eleifend, sollicitudin suscipit erat condimentum.',
-      'rating': 'img/rating/3stars.png'
+      'id': '3', 'name': 'Fellin', 'image': 'img/menyy_pildid/hirvetartar.jpg', 'price': '9.45',
+      'desc': 'Maecenas libero ex, tristique a gravida eu, interdum eu elit. Nunc lacinia purus vulputate nibh eleifend, sollicitudin suscipit erat condimentum.'
     },
     {
-      'id': '4', 'name': 'Truffe', 'logo': 'img/foods/Truffle.png', 'price': '12.99',
-      'desc': 'Quisque iaculis aliquam magna, ut accumsan arcu viverra vitae. Phasellus vulputate sapien et risus venenatis, sit amet volutpat diam accumsan.',
-      'rating': 'img/rating/3stars.png'
+      'id': '4', 'name': 'Truffe', 'image': 'img/menyy_pildid/galerii352.jpg', 'price': '12.99',
+      'desc': 'Quisque iaculis aliquam magna, ut accumsan arcu viverra vitae. Phasellus vulputate sapien et risus venenatis, sit amet volutpat diam accumsan.'
+    },
+    {
+      'id': '5', 'name': 'Truffe', 'image': 'img/menyy_pildid/1-2.jpg', 'price': '12.99',
+      'desc': 'Quisque iaculis aliquam magna, ut accumsan arcu viverra vitae. Phasellus vulputate sapien et risus venenatis, sit amet volutpat diam accumsan.'
+    }
+  ];
+
+  // $scope.feedItems.splice(1, 0, data); <- Injection
+});
+
+eatsyApp.controller('drinkController', function ($scope) {
+  $scope.feedItems = [
+    {
+      'id': '1', 'name': 'Blonde Pilsner', 'image': 'img/menyy_pildid/pitza.jpg', 'price': '1.99',
+    },
+    {
+      'id': '2', 'name': 'Bock Dark 12%', 'image': 'img/menyy_pildid/pardimaks.jpg', 'price': '2.99',
+    },
+    {
+      'id': '3', 'name': 'Valmiermuiza Dark', 'image': 'img/menyy_pildid/hirvetartar.jpg', 'price': '3.59',
+    },
+    {
+      'id': '4', 'name': 'Blond Munk', 'image': 'img/menyy_pildid/galerii352.jpg', 'price': '2.99',
+    },
+    {
+      'id': '5', 'name': 'Kala', 'image': 'img/menyy_pildid/1-2.jpg', 'price': '12.99',
+      'desc': 'Quisque iaculis aliquam magna, ut accumsan arcu viverra vitae. Phasellus vulputate sapien et risus venenatis, sit amet volutpat diam accumsan.'
     }
   ];
 
