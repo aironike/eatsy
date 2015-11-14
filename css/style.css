@@ -62,21 +62,19 @@ body {
 .fav {
 }
 
+.ng-animate {
+	transition: .4s ease-in all;
+}
+
 .ng-enter {
-	animation: pageLoad .5s ease-in-out;
+	-webkit-transform: translateX(-100%);
 }
-
+.ng-enter.ng-enter-active {
+	-webkit-transform: translateX(0);
+}
 .ng-leave {
-	animation: pageClose .5s ease-in-out;
+	-webkit-transform: translateX(0);
 }
-
- Animation
-
-@keyframes pageLoad {
-	from: {	transform: translateX(-100px); }
-	to: { transform: translateX(120px); }
-}
-
-@keyframes pageClose {
-	to: { transform: translateX(-100%); }
+.ng-leave.ng-leave-active {
+	-webkit-transform: translateX(-100%);
 }
