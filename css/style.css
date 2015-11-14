@@ -1,9 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400);
+
 html, body {
 	height: 100%;
 } 
 
 body {
 	margin: 0;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
 }
 
 .main {
@@ -72,16 +77,48 @@ body {
 
 .ng-enter.ng-enter-active {
 	-webkit-transform: translateX(0);
+}
 
 /*Animation*/
 
-@keyframes pageLoad {
-	from: {	transform: translateX(-100px); }
-	to: { transform: translateX(120px); }
-}
 .ng-leave {
 	-webkit-transform: translateX(0);
 }
 .ng-leave.ng-leave-active {
 	-webkit-transform: translateX(-100%);
+}
+
+/* Nearest */
+
+.nearest-list li {
+	border-bottom: 1px solid #e8e8e8;
+	position: relative;
+}
+
+.nearest-list img {
+	max-width: 70px;
+	margin: 10px 20px;
+	display: inline-block;
+}
+.nearest-list h3 {
+	padding: 0;
+	margin: 10px 0 0 0;
+	color: #ea4848;
+	font-weight: 300;
+}
+.nearest-list .info {
+	display: inline-block;
+}
+
+.nearest-list p {
+	font-size: 1.3rem;
+}
+
+.nearest-list span {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	font-size: 2rem;
+	margin: 0 20px;
 }
