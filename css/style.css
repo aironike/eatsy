@@ -108,11 +108,11 @@ body {
 }
 
 .ng-animate {
-	-webkit-transition: .4s ease-in all;
-	-moz-transition: .4s ease-in all;
-	-ms-transition: .4s ease-in all;
-	-o-transition: .4s ease-in all;
-	transition: .4s ease-in all;
+	-webkit-transition: .3s ease-in all;
+	-moz-transition: .3s ease-in all;
+	-ms-transition: .3s ease-in all;
+	-o-transition: .3s ease-in all;
+	transition: .3s ease-in all;
 }
 
 .ng-enter {
