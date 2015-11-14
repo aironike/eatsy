@@ -126,23 +126,6 @@ body {
 	color: #353535;
 }
 
-.home {
-	background: yellow;
-}
-}
-
-.search {
-	background: blue;
-}
-
-.nearest {
-	background: red;
-}
-
-.fav {
-	background: violet;
-}
-
 .ng-animate {
 	-webkit-transition: .4s ease-in all;
 	-moz-transition: .4s ease-in all;
