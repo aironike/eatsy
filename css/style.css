@@ -11,6 +11,49 @@ body {
   font-size: 16px;
 }
 
+.push-notification{
+  background: #262626;
+  height: 55px;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  color: white;
+  opacity: 0.8;
+  padding: 10px;
+}
+
+.push-notification .icon, .push-notification .notification{
+  display: inline-block;
+  float: left;
+}
+
+.push-notification p{
+  font-size: 10px;
+  margin: 0;
+  padding: 0 5px;
+}
+
+.push-notification p span{
+  opacity: 0.5;
+}
+
+.push-notification img{
+  max-height: 30px;
+  max-width: 30px;
+}
+
+.push-notification .tilulilu{
+  background: white;
+  height: 5px;
+  width: 50px;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  margin-left:-25px ;
+  border-radius: 10px;
+  opacity: 1;
+}
+
 .no-margin {
   margin: 0 !important;
 }

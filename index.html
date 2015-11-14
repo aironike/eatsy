@@ -1,50 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Eatsy</title>
-	<!-- Bootstrap -->
-	<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Eatsy</title>
+  <!-- Bootstrap -->
+  <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
-	<link rel="stylesheet" href="css/style.css" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="css/style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body ng-app="eatsyApp">
 
-	<div class="main {{ pageClass }}" ng-view ng-if="true"></div>
-	
-	<ul class="list-unstyled main-navigation text-center">
-		<li class="col-xs-3">
-			<a href="#/" class="icon user-profile">
-				<img src="img/icons/home.png" />
-			</a>
-		</li>
-		<li class="col-xs-3">
-			<a href="#search" class="icon search">
-				<img src="img/icons/search.png" />
-			</a>
-		</li>
-		<li class="col-xs-3">
-			<a href="#nearest" class="icon nearest">
-				<img src="img/icons/around_me.png" />
-			</a>
-		</li>
-		<li class="col-xs-3">
-			<a href="#favourite" class="icon favourite">
-				<img src="img/icons/favourite.png" />
-			</a>
-		</li>
-	</ul>
+<div class="push-notification">
 
-	<script src="bower_components/angular/angular.js"></script>
-	<script src="bower_components/angular-route/angular-route.js"></script>
-	<script src="bower_components/angular-animate/angular-animate.js"></script>
-	<script src="js/app.js"></script>
-	<script src="js/controllers.js"></script>
+		<div class="icon">
+			<img src="img/logos/eatsy-logo.jpg" alt="eatsy">
+		</div>
+		<div class="notification">
+			<p>eatsy <span>14/11/15 7:00 PM</span></p>
+			<p>your friend has aded a review</p>
+		</div>
+  <div class="tilulilu"></div>
+
+</div>
+
+<div class="main {{ pageClass }}" ng-view ng-if="true"></div>
+
+<ul class="list-unstyled main-navigation text-center">
+  <li class="col-xs-3">
+    <a href="#/" class="icon user-profile">
+      <img src="img/icons/home.png"/>
+    </a>
+  </li>
+  <li class="col-xs-3">
+    <a href="#search" class="icon search">
+      <img src="img/icons/search.png"/>
+    </a>
+  </li>
+  <li class="col-xs-3">
+    <a href="#nearest" class="icon nearest">
+      <img src="img/icons/around_me.png"/>
+    </a>
+  </li>
+  <li class="col-xs-3">
+    <a href="#favourite" class="icon favourite">
+      <img src="img/icons/favourite.png"/>
+    </a>
+  </li>
+</ul>
+
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controllers.js"></script>
 </body>
 </html>
