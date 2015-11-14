@@ -59,7 +59,7 @@ body {
 }
 
 .margin-bottom {
-  margin-bottom: 20px !important;
+  margin-bottom: 10px !important;
 }
 
 .no-padding {
@@ -247,9 +247,14 @@ body {
   margin-bottom: 10px;
 }
 
-.container .address li img {
+.container .address li{
+  margin-bottom: 10px;
+}
+
+.container .address li .icon {
   width: 15px;
   height: 15px;
+  margin-right: 10px;
 }
 
 .ng-animate {
