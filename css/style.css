@@ -220,9 +220,9 @@ body {
 
 .home .header {
 	height: 150px;
-	background: url('../img/taustad/map.png') no-repeat;
+	background: url('../img/taustad/map_3.png') no-repeat;
 	background-size: cover;
-	margin: 0;
+	margin-bottom: 10px;
 }
 
 .home .header-info {
@@ -232,19 +232,18 @@ body {
 }
 
 .home .header h3, .home .header p {
+	color: #353535;
 	margin: 0;
-	font-weight: 400;
+	font-weight: 300;
 	text-align: center;
 	padding: 5px 0 0 0;
 }
 
 .home .header h3 {
-	color: #fff;
 	font-size: 3rem;
+	color: #ea4848;
 }
 .home .header p {
-	color: #FFF;
-	opacity: .7;
 	margin-top:10px;
 }
 
