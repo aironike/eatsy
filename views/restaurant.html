@@ -1,7 +1,10 @@
-<div class="jumbotron no-margin text-center margin-bottom">
+<div class="jumbotron no-margin text-center margin-bottom no-padding-bottom font-light"
+     style="background: url('../img/resto-demo/resto-cover-shadowed.jpg')">
   <div class="row logo-wrapper text-center">
     <img src="img/resto-demo/resto-logo.png" alt="resto-demo-logo">
   </div>
+  <h3>Cafe Lion</h3>
+
   <p class="slogan">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   </p>
@@ -18,19 +21,25 @@
   </div>
   <div class="row">
     <div class="col-xs-12">
-      <ul class="list-unstyled">
-        <li class="col-xs-3 icons">1</li>
-        <li class="col-xs-3 icons">2</li>
-        <li class="col-xs-3 icons">3</li>
-        <li class="col-xs-3 icons">4</li>
+      <ul class="list-unstyled jumbotron-navigation" ng-init="tab = 1">
+        <li class="col-xs-3 icons" ng-class="{active:tab===1}" ng-click="tab = 1"><img src="img/icons/menyy.png" alt="">
+        </li>
+        <li class="col-xs-3 icons" ng-class="{active:tab===2}" ng-click="tab = 2"><img src="img/icons/joogikaart.png"
+                                                                                       alt=""></li>
+        <li class="col-xs-3 icons" ng-class="{active:tab===3}" ng-click="tab = 3"><img src="img/icons/review.png"
+                                                                                       alt=""></li>
+        <li class="col-xs-3 icons" ng-class="{active:tab===4}" ng-click="tab = 4"><img src="img/icons/info.png" alt="">
+        </li>
       </ul>
     </div>
   </div>
 </div>
 
-<div class="container">
-  <div class="row content-navigation">
-    <ul class="list-unstyled list-inline text-center">
+
+<div ng-show="tab === 1">
+
+  <div class="content-navigation">
+    <ul class="list-unstyled list-inline text-center bck-white">
       <li class="active">
         <a href="#">Main courses</a>
       </li>
@@ -46,152 +55,47 @@
       </li>
     </ul>
   </div>
-  <div class="row menu">
-    <ul class="list-unstyled">
-      <li class="menu-item border-bottom">
-        <div class="row">
-          <div class="col-xs-3 logo"><img src="img/resto-demo/big-logo-test.jpg" alt="resto-demo-logo"></div>
-          <div class="col-xs-9 info">
-            <div class="title">
-              <span class="col-xs-9">Seljanka</span>
-              <span class="col-xs-3">12.99€</span>
-            </div>
-            <div class="col-xs-12 extra-info">
-              Nulla in velit ultricies, laoreet lorem non, imperdiet sapien. Aenean sed sapien metus. Interdum et
-              malesuada fames ac ante ipsum primis in faucibus.
-            </div>
-            <div class="text-right">
-              <a href="#">More info ></a>
-            </div>
+
+  <ul class="list-unstyled bck-white" ng-controller="foodControllerCourses">
+    <li class="border-bottom padding-top-bottom padding-left-right font-sm" ng-repeat="item in feedItems">
+      <div class="row">
+        <div class="col-xs-2"><img class="img-responsive border" ng-src="{{item.image}}"/></div>
+        <div class="col-xs-10">
+          <div class="col-xs-12">
+            <h5 class="no-margin">{{item.name}}</h5>
           </div>
-        </div>
-      </li>
-      <li class="menu-item border-bottom">
-        <div class="row">
-          <div class="col-xs-3 logo"><img src="img/resto-demo/big-logo-test.jpg" alt="resto-demo-logo"></div>
-          <div class="col-xs-9 info">
-            <div class="title">
-              <span class="col-xs-9">Seljanka</span>
-              <span class="col-xs-3">12.99€</span>
-            </div>
-            <div class="col-xs-12 extra-info">
-              Nulla in velit ultricies, laoreet lorem non, imperdiet sapien. Aenean sed sapien metus. Interdum et
-              malesuada fames ac ante ipsum primis in faucibus.
-            </div>
-            <div class="text-right">
-              <a href="#">More info ></a>
-            </div>
+
+          <div class="col-xs-10">
+            {{item.desc}}
           </div>
-        </div>
-      </li>
-      <li class="menu-item border-bottom">
-        <div class="row">
-          <div class="col-xs-3 logo"><img src="img/resto-demo/big-logo-test.jpg" alt="resto-demo-logo"></div>
-          <div class="col-xs-9 info">
-            <div class="title">
-              <span class="col-xs-9">Seljanka</span>
-              <span class="col-xs-3">12.99€</span>
-            </div>
-            <div class="col-xs-12 extra-info">
-              Nulla in velit ultricies, laoreet lorem non, imperdiet sapien. Aenean sed sapien metus. Interdum et
-              malesuada fames ac ante ipsum primis in faucibus.
-            </div>
-            <div class="text-right">
-              <a href="#">More info ></a>
-            </div>
+
+          <div class="col-xs-2 font-md">
+            {{item.price}}€
           </div>
+
+          <div class="col-xs-12 text-right"><a href="#">More info ></a></div>
         </div>
-      </li>
-      <li class="menu-item border-bottom">
-        <div class="row">
-          <div class="col-xs-3 logo"><img src="img/resto-demo/big-logo-test.jpg" alt="resto-demo-logo"></div>
-          <div class="col-xs-9 info">
-            <div class="title">
-              <span class="col-xs-9">Seljanka</span>
-              <span class="col-xs-3">12.99€</span>
-            </div>
-            <div class="col-xs-12 extra-info">
-              Nulla in velit ultricies, laoreet lorem non, imperdiet sapien. Aenean sed sapien metus. Interdum et
-              malesuada fames ac ante ipsum primis in faucibus.
-            </div>
-            <div class="text-right">
-              <a href="#">More info ></a>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="menu-item border-bottom">
-        <div class="row">
-          <div class="col-xs-3 logo"><img src="img/resto-demo/big-logo-test.jpg" alt="resto-demo-logo"></div>
-          <div class="col-xs-9 info">
-            <div class="title">
-              <span class="col-xs-9">Seljanka</span>
-              <span class="col-xs-3">12.99€</span>
-            </div>
-            <div class="col-xs-12 extra-info">
-              Nulla in velit ultricies, laoreet lorem non, imperdiet sapien. Aenean sed sapien metus. Interdum et
-              malesuada fames ac ante ipsum primis in faucibus.
-            </div>
-            <div class="text-right">
-              <a href="#">More info ></a>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="menu-item border-bottom">
-        <div class="row">
-          <div class="col-xs-3 logo"><img src="img/resto-demo/big-logo-test.jpg" alt="resto-demo-logo"></div>
-          <div class="col-xs-9 info">
-            <div class="title">
-              <span class="col-xs-9">Seljanka</span>
-              <span class="col-xs-3">12.99€</span>
-            </div>
-            <div class="col-xs-12 extra-info">
-              Nulla in velit ultricies, laoreet lorem non, imperdiet sapien. Aenean sed sapien metus. Interdum et
-              malesuada fames ac ante ipsum primis in faucibus.
-            </div>
-            <div class="text-right">
-              <a href="#">More info ></a>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="menu-item border-bottom">
-        <div class="row">
-          <div class="col-xs-3 logo"><img src="img/resto-demo/big-logo-test.jpg" alt="resto-demo-logo"></div>
-          <div class="col-xs-9 info">
-            <div class="title">
-              <span class="col-xs-9">Seljanka</span>
-              <span class="col-xs-3">12.99€</span>
-            </div>
-            <div class="col-xs-12 extra-info">
-              Nulla in velit ultricies, laoreet lorem non, imperdiet sapien. Aenean sed sapien metus. Interdum et
-              malesuada fames ac ante ipsum primis in faucibus.
-            </div>
-            <div class="text-right">
-              <a href="#">More info ></a>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="menu-item border-bottom">
-        <div class="row">
-          <div class="col-xs-3 logo"><img src="img/resto-demo/big-logo-test.jpg" alt="resto-demo-logo"></div>
-          <div class="col-xs-9 info">
-            <div class="title">
-              <span class="col-xs-9">Seljanka</span>
-              <span class="col-xs-3">12.99€</span>
-            </div>
-            <div class="col-xs-12 extra-info">
-              Nulla in velit ultricies, laoreet lorem non, imperdiet sapien. Aenean sed sapien metus. Interdum et
-              malesuada fames ac ante ipsum primis in faucibus.
-            </div>
-            <div class="text-right">
-              <a href="#">More info ></a>
-            </div>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </div>
+      </div>
+    </li>
+  </ul>
 </div>
+<div ng-show="tab === 2">
+  <ul class="list-unstyled bck-white" ng-controller="drinkController">
+    <li class="border-bottom padding-top-bottom padding-left-right font-sm" ng-repeat="item in feedItems">
+      <div class="row">
+        <div class="col-xs-2"><img class="img-responsive border" ng-src="{{item.image}}"/></div>
+        <div class="col-xs-10">
+          <div class="col-xs-10">
+            <h5 class="no-margin">{{item.name}}</h5>
+          </div>
+
+          <div class="col-xs-2 font-md">
+            {{item.price}}€
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+<div ng-show="tab === 3">3</div>
+<div ng-show="tab === 4">4</div>

@@ -9,6 +9,11 @@ body {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 16px;
+  background: #f6f6f6;
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{
+  padding: 0 5px!important;
 }
 
 .push-notification{
@@ -54,6 +59,10 @@ body {
   opacity: 1;
 }
 
+.bck-white{
+  background: white;
+}
+
 .no-margin {
   margin: 0 !important;
 }
@@ -62,18 +71,76 @@ body {
   margin-bottom: 20px !important;
 }
 
+.margin-bottom-divided-2 {
+  margin-bottom: 10px !important;
+}
+
+.negative-margin{
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
 .no-padding {
   padding: 0 !important;
+}
+
+.no-padding-bottom {
+  padding-bottom: 0 !important;
+}
+
+.padding-bottom{
+  padding-bottom: 10px;
+}
+
+.padding-top-bottom{
+  padding: 10px 0;
+}
+
+.padding-left-right{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.border{
+  border: solid 1px #e8e8e8;
 }
 
 .border-bottom {
   border-bottom: solid 1px #e8e8e8;
 }
 
+.font-sm{
+  font-size: 12px;
+}
+
+.font-md{
+  font-size: 14px;
+}
+
+.font-lg{
+  font-size: 20px;
+}
+
+.font-dark{
+  font-size: 12px;
+}
+
+.font-light{
+  color:white;
+}
+
+li > .row{
+li > .row{
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
 .main {
   width: 100%;
   height: 100%;
   position: absolute;
+  margin-bottom: 145px;
+  background: white;
 }
 
 .main-wrapper {
@@ -101,12 +168,7 @@ body {
   -webkit-transform: translateY(50%);
   -o-transform: translateY(50%);
   -ms-transform: translateY(50%);
-  transition: opacity 0.3s ease-in-out;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  -moz-transition: opacity 0.3s ease-in-out;
-  -ms-transition: opacity 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out;
-  
+
 }
 
 .main-navigation .icon:focus img{
@@ -137,18 +199,31 @@ body {
 }
 
 .jumbotron {
-  background: url("../img/resto-demo/resto-cover-shadowed.jpg") no-repeat;
+  background: #e3e3e3;
   background-size: cover;
-  color: white;
   width: 100%;
-  webkit-box-shadow: inset 0px -15px 20px -5px rgba(14, 13, 13, 0.55);
-  box-shadow: inset 0px -15px 20px -5px rgba(14, 13, 13, 0.55);
+}
+
+.jumbotron h3 {
+  font-weight: 300;
+}
+
+
+.jumbotron-navigation img{
+  width: 30px;
+  height: 30px;
+}
+
+.jumbotron-navigation li {
+  height: 50px;
+}
+
+.jumbotron-navigation .active{
+  background: url('../img/icons/arrow.png') no-repeat bottom center;
 }
 
 .jumbotron .logo-wrapper {
-  width: 220px;
   max-height: 220px;
-  margin: 0 auto 20px auto;
   overflow: hidden;
 }
 
@@ -160,6 +235,11 @@ body {
 
 .jumbotron .slogan {
   font-size: 12px;
+}
+
+.map{
+  background: url('../img/taustad/map_3.png') no-repeat;
+  background-size: cover;
 }
 
 .ng-scope > .search{
@@ -174,44 +254,46 @@ body {
   top: 50%
 }
 
-.container .content-navigation {
+.container{
+  margin-bottom: 100px;
+}
+
+.content-navigation {
   text-transform: uppercase;
 }
 
-.container .content-navigation a {
+.content-navigation a {
   color: #a9a9a9;
 }
 
-.container .content-navigation .active a {
+.content-navigation .active a {
   color: #353535;
 }
 
-.container .menu {
 
-}
-
-.container .menu li {
-  padding: 5px;
-  font-size: 12px;
-}
-
-.container .menu a {
+ul li a {
   color: #ea4848;
 }
 
-.container .menu .menu-item .title {
+ul li .title {
   font-size: 18px;
 }
 
-.container .menu img {
-  width: 100px;
-  max-height: 100px;
-}
 
-.container .menu .extra-info {
+ul li .extra-info {
   height: 50px;
   overflow: hidden;
   margin-bottom: 10px;
+}
+
+.container .address li{
+  margin-bottom: 10px;
+}
+
+.container .address li .icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
 }
 
 .ng-animate {
@@ -254,14 +336,7 @@ body {
 /* Home feed */
 
 .home {
-	background: #f6f6f6;
-}
 
-.home .header {
-	height: 150px;
-	background: url('../img/taustad/map_3.png') no-repeat;
-	background-size: cover;
-	margin-bottom: 10px;
 }
 
 .home .header-info {
@@ -392,7 +467,7 @@ body {
 	margin: 0 5px;
 }
 .friends-header img {
-	max-width: 40px;
+	max-width: 30px;
 }
 
 .friend-item img {
