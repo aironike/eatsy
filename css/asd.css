@@ -97,6 +97,7 @@ h5 {
 
 .restaurant .tab-menu img {
 	max-width: 100px;
+	border-radius: 4px;
 }
 
 .restaurant .fff {
@@ -105,4 +106,21 @@ h5 {
 .info-tab {
 	margin: 20px;
 	padding-bottom: 60px !important;
+}
+
+.tab-menu p {
+	margin: 5px 0 0 0 ;
+}
+
+.tab-menu p.price {
+	font-weight: 400;
+}
+.penis .icons img {
+	width: auto !important;
+	height: auto !important;
+	max-width: 35px;
+}
+
+.resto-logo {
+	max-width: 200px;
 }

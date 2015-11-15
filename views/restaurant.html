@@ -1,7 +1,7 @@
 <div class="jumbotron no-margin text-center margin-bottom no-padding-bottom font-light"
      style="background: url('img/resto-demo/resto-cover-shadowed.jpg')">
   <div class="row logo-wrapper text-center">
-    <img src="img/logos/lyon_logo_pruun.svg" alt="resto-demo-logo">
+    <img class="resto-logo" src="img/logos/lyon_logo_pruun.svg" alt="resto-demo-logo">
   </div>
   <h2>Cafe Lyon</h2>
 
@@ -15,13 +15,13 @@
       Add to favorites
     </div>
     <div class="btn btn-default">
-      <img src="img/icons/favourite_50x50.png" alt="">
+      <img src="img/icons/arvustus.png" alt="">
       Add review
     </div>
   </div>
   <div class="row">
     <div class="col-xs-12">
-      <ul class="list-unstyled jumbotron-navigation" ng-init="tab = 1">
+      <ul class="list-unstyled jumbotron-navigation penis" ng-init="tab = 1">
         <li class="col-xs-3 icons" ng-class="{active:tab===1}" ng-click="tab = 1"><img src="img/icons/menyy.png" alt="">
         </li>
         <li class="col-xs-3 icons" ng-class="{active:tab===2}" ng-click="tab = 2"><img src="img/icons/joogikaart.png"
@@ -48,11 +48,11 @@
           </div>
 
           <div class="col-xs-10">
-            {{item.desc}}
+            <p>{{item.desc}}</p>
           </div>
 
           <div class="col-xs-2 font-md text-right">
-            {{item.price}}€
+            <p class="price">{{item.price}}€</p>
           </div>
 
           <div class="col-xs-12 text-right"><a href="#">More info ></a></div>
