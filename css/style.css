@@ -61,6 +61,7 @@ body {
 
 .bck-white{
   background: white;
+  padding-bottom: 60px;
 }
 
 .no-margin {
@@ -109,22 +110,6 @@ body {
   border-bottom: solid 1px #e8e8e8;
 }
 
-.font-sm{
-  font-size: 12px;
-}
-
-.font-md{
-  font-size: 14px;
-}
-
-.font-lg{
-  font-size: 20px;
-}
-
-.font-dark{
-  font-size: 12px;
-}
-
 .font-light{
   color:white;
 }
@@ -138,7 +123,6 @@ li > .row{
   width: 100%;
   height: 100%;
   position: absolute;
-  margin-bottom: 145px;
   background: white;
 }
 
@@ -218,6 +202,7 @@ li > .row{
 }
 
 .jumbotron-navigation .active{
+  transition: none !important;
   background: url('../img/icons/arrow.png') no-repeat bottom center;
 }
 
@@ -535,10 +520,7 @@ ul li .extra-info {
 .search input[type=text]:focus {
 	outline: none;
 }
-<<<<<<< HEAD
 
 img.filter-item {
   width: 30px;
 }
-=======
->>>>>>> dc4bfb338fd6d181f4fb1f4a391b6e0ddecadaf1
