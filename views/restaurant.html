@@ -1,5 +1,5 @@
 <div class="jumbotron no-margin text-center margin-bottom no-padding-bottom font-light"
-     style="background: url('../img/resto-demo/resto-cover-shadowed.jpg')">
+     style="background: url('img/resto-demo/resto-cover-shadowed.jpg')">
   <div class="row logo-wrapper text-center">
     <img src="img/resto-demo/resto-logo.png" alt="resto-demo-logo">
   </div>
@@ -69,7 +69,7 @@
             {{item.desc}}
           </div>
 
-          <div class="col-xs-2 font-md">
+          <div class="col-xs-2 font-md text-right">
             {{item.price}}€
           </div>
 
@@ -97,5 +97,47 @@
     </li>
   </ul>
 </div>
-<div ng-show="tab === 3">3</div>
-<div ng-show="tab === 4">4</div>
+<div ng-show="tab === 3">
+  <ul class="list-unstyled bck-white" ng-controller="reviewsController">
+    <li class="border-bottom padding-top-bottom padding-left-right font-sm" ng-repeat="item in reviewItems">
+      <div class="row">
+        <div class="col-xs-2"><img class="img-responsive" ng-src="{{item.profile}}"/></div>
+        <div class="col-xs-10">
+          <h5 class="no-margin margin-bottom-divided-2">{{item.name}}</h5>
+          <p>{{item.review}}</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+<div ng-show="tab === 4">
+
+  <div class="col-xs-12 border-bottom">
+    <h5>Contacts</h5>
+    <ul class="list-unstyled address">
+      <li><img src="img/icons/icon_address.png" alt="" class="icon">Kalamaja 123, Tallinn</li>
+      <li><img src="img/icons/phone.png" alt="" class="icon">00 372 56 123 543</li>
+      <li><img src="img/icons/aadress.png" alt="" class="icon">info@cafelion.ee</li>
+    </ul>
+  </div>
+
+
+  <div class="col-xs-12 border-bottom">
+    <h5>Opening times</h5>
+    <ul class="list-unstyled">
+      <li><b>Sunday - Tuesday: </b>10:00 - 22:00</li>
+      <li><b>Wendesday - Thursday: </b>10:00 - 22:00</li>
+      <li><b>Friday - Saturday: </b>10:00 - 22:00</li>
+    </ul>
+  </div>
+
+
+  <div class="col-xs-12 border-bottom">
+    <h5>Description</h5>
+
+    <p class="font-sm">Vivamus sit amet dapibus leo, sed accumsan mauris. Curabitur faucibus mollis dolor, et
+      sollicitudin tortor efficitur in. Duis vel dolor quis sem fringilla cursus id ut dolor. Quisque sagittis est vel
+      nisi pharetra, vitae pharetra felis feugiat. Fusce a libero vel mi fringilla dignissim.</p>
+  </div>
+
+</div>

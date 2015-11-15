@@ -285,11 +285,11 @@ ul li .extra-info {
   margin-bottom: 10px;
 }
 
-.container .address li{
+.address li{
   margin-bottom: 10px;
 }
 
-.container .address li .icon {
+.address li .icon {
   width: 15px;
   height: 15px;
   margin-right: 10px;
@@ -535,7 +535,10 @@ ul li .extra-info {
 .search input[type=text]:focus {
 	outline: none;
 }
+<<<<<<< HEAD
 
 img.filter-item {
   width: 30px;
 }
+=======
+>>>>>>> dc4bfb338fd6d181f4fb1f4a391b6e0ddecadaf1

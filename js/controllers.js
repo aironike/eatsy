@@ -145,6 +145,31 @@ eatsyApp.controller('drinkController', function ($scope) {
 
 });
 
+eatsyApp.controller('reviewsController', function ($scope) {
+  $scope.reviewItems = [
+    {
+      'id': '1', 'name': 'Egert Kalimulin', 'profile': 'img/friends/egert.png', 'review': 'Quisque iaculis aliquam magna, ut accumsan arcu viverra vitae. Phasellus vulputate sapien et risus venenatis, sit amet volutpat diam accumsan.',
+    },
+    {
+      'id': '2', 'name': 'Ethan J.', 'profile' : 'img/friends/ethan.png', 'review': 'Quisque iaculis aliquam magna, ut accumsan arcu viverra vitae. Phasellus vulputate sapien et risus venenatis, sit amet volutpat diam accumsan.',
+    },
+    {
+      'id': '3', 'name': 'Jussi Mottus', 'profile' : 'img/friends/jussi.png', 'review': 'Quisque iaculis aliquam magna, ut accumsan arcu viverra vitae. Phasellus vulputate sapien et risus venenatis, sit amet volutpat diam accumsan.',
+    },
+    {
+      'id': '4', 'name': 'Pille-Triin Raitviir', 'profile' : 'img/friends/pille.png', 'review': 'Quisque iaculis aliquam magna, ut accumsan arcu viverra vitae. Phasellus vulputate sapien et risus venenatis, sit amet volutpat diam accumsan.',
+    },
+    {
+      'id': '5', 'name': 'Rein Pettai', 'profile' : 'img/friends/rein.png', 'review': 'Quisque iaculis aliquam magna, ut accumsan arcu viverra vitae. Phasellus vulputate sapien et risus venenatis, sit amet volutpat diam accumsan.',
+    },
+    {
+      'id': '6', 'name': 'Hemant', 'profile' : 'img/friends/hemant.png', 'review': 'Quisque iaculis aliquam magna, ut accumsan arcu viverra vitae. Phasellus vulputate sapien et risus venenatis, sit amet volutpat diam accumsan.',
+    }
+  ];
+
+});
+
+
 eatsyApp.controller('friendsListController', function ($scope) {
    $scope.friendList = [
         {'profile' : 'img/friends/egert.png'},
