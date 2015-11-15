@@ -155,10 +155,6 @@ li > .row{
 
 }
 
-.main-navigation .icon:focus img{
-  opacity: 1;
-}
-
 .btn {
   border-radius: 0;
   border: 0;

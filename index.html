@@ -67,5 +67,24 @@
 <script src="js/app.js"></script>
 <script src="js/controllers.js"></script>
 <script type="text/javascript" src="js/scripts.js"></script>
+
+<script>
+  $(document).ready(function() {
+
+    $('a.icon img').click(function() {
+
+      $('a.icon img').each(function() {
+        if ( $(this).hasClass('filter-on') ) {
+              $(this).removeClass('filter-on');
+            }
+      });
+
+        $(this).addClass('filter-on');
+
+      
+    });
+    
+  });
+</script>
 </body>
 </html>
