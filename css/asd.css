@@ -103,5 +103,6 @@ h5 {
 	padding-left: 25px !important;
 }
 .info-tab {
-	margin-bottom: 60px;
+	margin: 20px;
+	padding-bottom: 60px !important;
 }
