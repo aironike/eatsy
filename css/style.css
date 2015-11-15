@@ -364,6 +364,7 @@ ul li .extra-info {
 
 .main .feed {
 	margin: 5px 0 0 0;
+  padding-bottom: 60px;
 }
 
 .feed li {
@@ -372,6 +373,7 @@ ul li .extra-info {
 	background: #FFF;
 	height: 105px;
 }
+
 .feed .user-list, .feed .user-text {
 	float: left;
 	color: #bcbcbc;
@@ -410,6 +412,10 @@ ul li .extra-info {
 	right: 0;
 	font-size: 2rem;
 	margin: 0 20px;
+}
+
+.feed-item a {
+  color: #353535;
 }
 
 .feed .user-list-item:after {
@@ -520,12 +526,16 @@ ul li .extra-info {
 }
 
 .searchBox {
-	width: 70%;
+	width: 100%;
 	height: 50px;
 	background: rgba(255,255,255,.6);
 	border: none;
-	margin-top: 50px;
+	margin: 50px 20px;
 }
-input[type=text]:focus {
+.search input[type=text]:focus {
 	outline: none;
+}
+
+img.filter-item {
+  width: 30px;
 }
