@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:300,400);
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
 
 html, body {
   height: 100%;
@@ -168,10 +168,6 @@ body {
   color: white;
 }
 
-.ng-scope > .search h1{
-  font-weight: 300;
-}
-
 .ng-scope > .search .categories{
   font-size: 18px;
   margin: auto
@@ -302,10 +298,22 @@ body {
 	background: #FFF;
 	height: 105px;
 }
+.feed .user-list, .feed .user-text {
+	float: left;
+	color: #bcbcbc;
+	display: inline-block;
+}
+.feed .user-list li {
+	background: none;
+	height: auto;
+	border: none;
+	display: inline-block;
+}
 
 .feed .feed-item .itemLogo {
 	max-width: 70px;
 	margin: 10px 20px;
+	border-radius: 50%;
 	display: inline-block;
 }
 .feed .feed-item h3 {
@@ -316,11 +324,6 @@ body {
 }
 .feed .feed-item .info {
 	display: inline-block;
-}
-
-.feed .feed-item .info .friends {
-	float: left;
-	color: #bcbcbc;
 }
 
 .feed .feed-item p {
@@ -335,11 +338,47 @@ body {
 	margin: 0 20px;
 }
 
+.feed .user-list-item:after {
+	content: ',';
+	margin-right: 3px;
+}
+.feed .user-list-item:nth-last-child(2):after {
+	content: 'and';
+	margin: 0 3px;
+}
+.feed .user-list-item:last-child:after {
+	content: '';
+	margin-right: 3px;
+}
+
 .feed .feed-item .rating {
 	top: 7px;
 }
 .feed .feed-item .distance {
 	top: 35px;
+}
+
+.feed p.user-text {
+	margin: 0;
+	font-size: 16px;
+}
+.star-rating {
+	
+}
+.star-rating-star {
+	height: 30px;
+	width: 30px;
+	background: url('../img/rating/star1.svg') no-repeat;
+}
+.glyphicon {
+	width: 16px;
+	height: 16px;
+}
+.glyphicon-star:before {
+	content: url('../img/rating/star1.svg');
+}
+.glyphicon-star-empty:before {
+	content: url('../img/rating/star1_empty.svg');
 }
 
 /* Friends */
@@ -354,6 +393,11 @@ body {
 }
 .friends-header img {
 	max-width: 40px;
+}
+
+.friend-item img {
+	max-width: 40px;
+	border-radius: 100%;
 }
 
 /* Nearest */ 
@@ -391,4 +435,22 @@ body {
   -webkit-transform: translateY(-50%);
   font-size: 2rem;
   margin: 0 20px;
+}
+
+/* Search */
+
+.search h1 {
+	font-weight: 100;
+	text-transform: uppercase;
+}
+
+.searchBox {
+	width: 70%;
+	height: 50px;
+	background: rgba(255,255,255,.6);
+	border: none;
+	margin-top: 50px;
+}
+input[type=text]:focus {
+	outline: none;
 }

@@ -1,4 +1,4 @@
-var eatsyApp = angular.module('eatsyApp', ['ngRoute', 'ngAnimate']);
+var eatsyApp = angular.module('eatsyApp', ['ngRoute', 'ngAnimate', 'ui.bootstrap.rating']);
 
 eatsyApp.config(function($routeProvider) {
         $routeProvider

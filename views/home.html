@@ -6,23 +6,26 @@
 	</div>
 </div>
 
-<ul class="list-unstyled friends-header" ng-controller="friendsListController">
-	<li class="friend-item" ng-repeat="item in friendList">
-		<img ng-src="{{item.profile}}" />
+<ul class="list-unstyled friends-header" ng-controller="feedController">
+	<li class="friend-item" ng-repeat="item in friends">
+		<img ng-src="{{item.profileImage}}" />
 	</li>
 </ul>
 
 <ul class="list-unstyled feed" ng-controller="feedController">
-	<li class="feed-item" ng-repeat="item in feedItems">
+	<li class="feed-item" ng-repeat="item in relatedRestaurants">
 		<img class="itemLogo" ng-src="{{item.logo}}" />
 		<div class="info">
 			<h3>{{item.name}}</h3>
-			<p>{{item.desc}}</p>
+			<ul class="list-unstyled user-list">
+				<li class="user-list-item" ng-repeat="user in item.users">{{user.name}}</li>
+			</ul>
+			<p class="user-text">has been here</p>
 			<p class="friends">{{item.friends}}</p>
 		</div>
-			<span class="rating"><img ng-src="{{item.rating}}" /></span>
+			<uib-rating ng-model="item.rating" max="5" readonly="true" aria-labelledby="Rating"></uib-rating>
+			
 			<span class="distance">{{item.dst}}</span>
-		
 	</li>
 </ul>
 
