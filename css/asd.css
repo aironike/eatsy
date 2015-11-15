@@ -78,9 +78,30 @@ h5 {
   font-size: 18px;
   font-weight: 400 !important;
   margin:0;
-  margin-bottom: 5px;
+  	margin-bottom: 7px !important;
 }
 
-.restaurant-menu .icons img {
-	max-width: 70px;
+.restaurant {
+	overflow-x: hidden;
+}
+.restaurant h2 {
+	font-weight: 300;
+}
+
+.restaurant .btn-default {
+	font-size: 14px;
+	width: 150px;
+	font-weight: 300;
+	border-radius: 4px;
+}
+
+.restaurant .tab-menu img {
+	max-width: 100px;
+}
+
+.restaurant .fff {
+	padding-left: 25px !important;
+}
+.info-tab {
+	margin-bottom: 60px;
 }
