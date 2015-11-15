@@ -161,9 +161,6 @@ eatsyApp.controller('reviewsController', function ($scope) {
     },
     {
       'id': '5', 'name': 'Rein Pettai', 'profile' : 'img/friends/rein.png', 'review': 'Quisque iaculis aliquam magna, ut accumsan arcu viverra vitae. Phasellus vulputate sapien et risus venenatis, sit amet volutpat diam accumsan.',
-    },
-    {
-      'id': '6', 'name': 'Hemant', 'profile' : 'img/friends/hemant.png', 'review': 'Quisque iaculis aliquam magna, ut accumsan arcu viverra vitae. Phasellus vulputate sapien et risus venenatis, sit amet volutpat diam accumsan.',
     }
   ];
 
