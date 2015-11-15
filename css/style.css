@@ -130,7 +130,6 @@ body {
 }
 
 li > .row{
-li > .row{
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
@@ -234,7 +233,7 @@ li > .row{
 }
 
 .jumbotron .slogan {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .map{
@@ -250,7 +249,7 @@ li > .row{
 
 .ng-scope > .search .categories{
   font-size: 18px;
-  margin: auto
+  margin: auto;
   top: 50%
 }
 
@@ -336,7 +335,7 @@ ul li .extra-info {
 /* Home feed */
 
 .home {
-
+  background: #f6f6f6;
 }
 
 .home .header-info {
@@ -459,7 +458,7 @@ ul li .extra-info {
 /* Friends */
 
 .friends-header {
-	margin-top: 5px;
+	margin-top: 10px;
 	text-align: center;
 }
 .friends-header li {

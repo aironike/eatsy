@@ -1,9 +1,11 @@
   $(document).ready(function() {
 
+    setTimeout(function() {
+    	$( ".push-notification" ).slideDown( 300, function() {
+	      $(this).delay(4000).slideUp( 300, function() {
+	      });
+	    });
+    }, 8000);
     
-    $( ".push-notification" ).slideDown( "slow", function() {
-      $(this).delay(5000).slideUp( "slow", function() {
-      });
-    });
     
   });

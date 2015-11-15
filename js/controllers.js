@@ -33,7 +33,6 @@ eatsyApp.controller('otherController', function($scope) {
     $scope.pageClass = "otherSuggestions";
 });
 
-<<<<<<< HEAD
 eatsyApp.controller('TabController', function () {
         this.tab = 1;
 
@@ -77,32 +76,8 @@ eatsyApp.controller('feedController', function ($scope, $http) {
             });
         });
     });
-=======
-eatsyApp.controller('feedController', function ($scope) {
-    $scope.feedItems = [
-        {'id' : '1', 'name' : 'Restaurant Noa', 'logo' : 'img/restoranide-ikoonid/feed_icon.png', 'dst' : '300m',
-        'desc' : 'Neque porro quisquam est qui dolorem ipsum quia',
-        'friends' : 'Bess, Karie, Elvira and 3 other friends have rated this place.',
-        'rating':'img/rating/4stars.png'},
-        {'id' : '2', 'name' : 'Cafe Lyon', 'logo' : 'img/restoranide-ikoonid/CafeLyon.png', 'dst' : '300m',
-        'desc' : 'Neque porro quisquam est qui dolorem ipsum quia',
-        'friends' : 'Bess, Karie, Elvira and 3 other friends have rated this place.',
-        'rating':'img/rating/5stars.png'},
-        {'id' : '3', 'name' : 'Fellin', 'logo' : 'img/restoranide-ikoonid/Fellin.png', 'dst' : '300m',
-        'desc' : 'Neque porro quisquam est qui dolorem ipsum quia',
-        'friends' : 'Bess, Karie, Elvira and 3 other friends have rated this place.',
-        'rating':'img/rating/3stars.png'},
-        {'id' : '4', 'name' : 'Truffe', 'logo' : 'img/restoranide-ikoonid/Truffle.png', 'dst' : '300m',
-        'desc' : 'Neque porro quisquam est qui dolorem ipsum quia',
-        'friends' : 'Bess, Karie, Elvira and 3 other friends have rated this place.',
-        'rating':'img/rating/3stars.png'}
-    ];
->>>>>>> origin/master
-
-    // $scope.feedItems.splice(1, 0, data); <- Injection
 });
 
-<<<<<<< HEAD
 eatsyApp.controller('tabsController', function($scope) {
     $scope.tabs = [
         {title: 'info', url: 'templates/restaurant/info.tpl.html'},
@@ -120,7 +95,8 @@ eatsyApp.controller('tabsController', function($scope) {
     $scope.isActiveTab = function(tabUrl) {
         return tabUrl == $scope.currentTab;
     }
-=======
+});
+
 eatsyApp.controller('foodControllerCourses', function ($scope) {
   $scope.feedItems = [
     {
@@ -145,7 +121,6 @@ eatsyApp.controller('foodControllerCourses', function ($scope) {
     }
   ];
 
-  // $scope.feedItems.splice(1, 0, data); <- Injection
 });
 
 eatsyApp.controller('drinkController', function ($scope) {
@@ -168,8 +143,6 @@ eatsyApp.controller('drinkController', function ($scope) {
     }
   ];
 
-  // $scope.feedItems.splice(1, 0, data); <- Injection
->>>>>>> origin/master
 });
 
 eatsyApp.controller('friendsListController', function ($scope) {
@@ -183,7 +156,4 @@ eatsyApp.controller('friendsListController', function ($scope) {
    ];
 });
 
-var data = {'id' : '6', 'name' : 'Restaurant Piparmynt', 'logo' : 'img/restoranide-ikoonid/feed_icon2.png', 'dst' : '300m',
-        'desc' : 'Neque porro quisquam est qui dolorem ipsum quia',
-        'friends' : 'Bess, Karie, Elvira and 3 other friends have rated this place.'};
 
