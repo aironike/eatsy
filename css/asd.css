@@ -137,3 +137,7 @@ h5 {
 	top: 45px;
 	left: 15px;
 }
+
+.open-comments {
+  height: 200px !important;
+}

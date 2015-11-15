@@ -12,8 +12,12 @@
 
 <ul class="list-unstyled feed" ng-controller="feedController">
 	<li class="feed-item" ng-repeat="item in relatedRestaurants">
-  <a href="#/restaurant">
+
 		<img class="itemLogo" ng-src="{{item.logo}}" />
+    <script type="text/javascript">
+    $("li").click(function(){
+        window.location = "index.html#/restaurant";
+    });</script>
 		<div class="info">
 			<h3>{{item.name}}</h3>
       <p class="description">{{item.description}}</p>
@@ -26,7 +30,7 @@
 			<uib-rating ng-model="item.rating" max="5" readonly="true" aria-labelledby="Rating"></uib-rating>
 			
 			<span class="distance">{{item.distance}}</span>
-      </a>
+
 	</li>
 
 </ul>
@@ -58,8 +62,6 @@
 
 <script>
   $(document).ready(function(){ 
-    $("li").click(function(){
-        window.location = "index.html#/restaurant";
-    });
+    
 });
 </script>
