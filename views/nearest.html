@@ -1,18 +1,39 @@
-<ul class="list-unstyled bck-white" ng-controller="feedController">
-  <li class="border-bottom padding-top-bottom padding-left-right font-sm" ng-repeat="item in feedItems">
-    <div class="row">
-      <div class="col-xs-2"><img class="img-responsive img-circle border" ng-src="{{item.logo}}"/></div>
-      <div class="col-xs-10">
-        <div class="col-xs-12">
-          <h5 class="no-margin">{{item.name}}</h5>
-        </div>
-
-        <div class="col-xs-10">
-          <div>{{item.desc}}</div>
-          <div><img ng-src="{{item.rating}}"/></div>
-        </div>
-        <div class="col-xs-2 font-md">{{item.dst}}</div>
+<ul class="list-unstyled feed" ng-controller="feedController">
+  <li class="feed-item" ng-repeat="item in relatedRestaurants">
+    <a href="#/restaurant">
+      <img class="itemLogo" ng-src="{{item.logo}}" />
+      <div class="info">
+        <h3>{{item.name}}</h3>
+        <p class="description">{{item.description}}</p>
+        <ul class="list-unstyled user-list">
+          <li class="user-list-item" ng-repeat="user in item.users">{{user.name}}</li>
+        </ul>
+        <p class="user-text">has been here</p>
+        <p class="friends">{{item.friends}}</p>
       </div>
-    </div>
+      <uib-rating ng-model="item.rating" max="5" readonly="true" aria-labelledby="Rating"></uib-rating>
+
+      <span class="distance">{{item.dst}}</span>
+    </a>
   </li>
+
 </ul>
+
+<!--<ul class="list-unstyled bck-white" ng-controller="feedController">-->
+  <!--<li class="border-bottom padding-top-bottom padding-left-right font-sm" ng-repeat="item in feedItems">-->
+    <!--<div class="row">-->
+      <!--<div class="col-xs-2"><img class="img-responsive img-circle border" ng-src="{{item.logo}}"/></div>-->
+      <!--<div class="col-xs-10">-->
+        <!--<div class="col-xs-12">-->
+          <!--<h5 class="no-margin">{{item.name}}</h5>-->
+        <!--</div>-->
+
+        <!--<div class="col-xs-10">-->
+          <!--<div>{{item.desc}}</div>-->
+          <!--<div><img ng-src="{{item.rating}}"/></div>-->
+        <!--</div>-->
+        <!--<div class="col-xs-2 font-md">{{item.dst}}</div>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</li>-->
+<!--</ul>-->
