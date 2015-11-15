@@ -6,6 +6,10 @@
 	      });
 	    });
     }, 8000);
+
+    $('.feed-item').click(function(){
+	  window.location = '/restaurant';
+	});
     
     
   });

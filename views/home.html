@@ -12,6 +12,7 @@
 
 <ul class="list-unstyled feed" ng-controller="feedController">
 	<li class="feed-item" ng-repeat="item in relatedRestaurants">
+  <a href="#/restaurant">
 		<img class="itemLogo" ng-src="{{item.logo}}" />
 		<div class="info">
 			<h3>{{item.name}}</h3>
@@ -25,7 +26,9 @@
 			<uib-rating ng-model="item.rating" max="5" readonly="true" aria-labelledby="Rating"></uib-rating>
 			
 			<span class="distance">{{item.dst}}</span>
+      </a>
 	</li>
+
 </ul>
 
 <!-- <ul class="list-unstyled friends-header no-margin padding-top-bottom border-bottom bck-white"
